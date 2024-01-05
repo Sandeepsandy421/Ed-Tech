@@ -18,41 +18,40 @@ header {
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.nav{
+nav {
     display: flex;
-    background-color: white;
-    height: 70px;
-
-    box-shadow: 0px 1px 3px gray;
-}
-
-.logo{
-    padding: 1.5rem;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-
-    font-family: verdana;
+    margin: 5px auto;
+    padding: 0 20px;
+}
+ 
+.logo {
+    font-size: 1.5rem;
     font-weight: bold;
-    font-size: 35px;
     color: orange;
-    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
 }
-
-.nav-links{
+ 
+.nav-links {
+    list-style: none;
     display: flex;
-    text-align: center;
-    align-items: center;
 }
-
-.nav-links li{
-    text-decoration: none;
-    color: black;
+ 
+.nav-links li {
+    margin-right: 20px;
 }
-
-.nav-links li:hover{
-    transition:0.8s;
+ 
+.nav-links a {
+    color: rgb(0, 0, 0);
+    padding: 10px;
     font-weight: bold;
-    color: orange;
+    text-decoration: none;
+}
+ 
+.nav-links a:hover {
+    background-color: rgb(255, 115, 1);
+    border-radius: 4px;
+    color: white;
 }
 /* About Section */
 .about {
@@ -116,7 +115,7 @@ button {
 }
 
 button:hover {
-	background-color: rgb(255, 167, 3);
+	background-color: rgb(255, 115, 1);
 }
 
 /* Team Section */
